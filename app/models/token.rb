@@ -9,9 +9,18 @@ class Token
     authorize_url: "https://dribbble.com/oauth/authorize".freeze
   }.freeze
 
-  # Generate an authorization URL with our client settings.
+  # Create an OAuth client with our settings.
+  def self.client
+    OAuth2::Client.new(CLIENT_ID, CLIENT_SECRET, CLIENT_OPTIONS)
+  end
+
+  # Create a token with our client using the code provided.
+  def self.create_from_code(code)
+    client.auth_code.get_token(code).token
+  end
+
+  # Generate an authorization URL with our client.
   def self.authorize_url
-    client = OAuth2::Client.new(CLIENT_ID, CLIENT_SECRET, CLIENT_OPTIONS)
     client.auth_code.authorize_url(scope: CLIENT_SCOPE)
   end
 end
