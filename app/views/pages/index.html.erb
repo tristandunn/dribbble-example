@@ -1,3 +1,7 @@
-<%= link_to Token.authorize_url do %>
-  <%= image_tag "dribbble.svg" %> Connect with Dribbble
+<% if @user.present? %>
+  <h1>Welcome, <%= @user.attributes[:name] %>!</h1>
+<% else %>
+  <%= link_to Token.authorize_url do %>
+    <%= image_tag "dribbble.svg" %> Connect with Dribbble
+  <% end %>
 <% end %>
