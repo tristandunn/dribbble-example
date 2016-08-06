@@ -7,7 +7,7 @@ describe SessionsController, "#new" do
   before do
     allow(Token).to receive(:create_from_code).and_return(token)
 
-    get :new, code: code
+    get :new, params: { code: code }
   end
 
   it "creates a token from the code parameter" do
