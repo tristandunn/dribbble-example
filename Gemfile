@@ -5,7 +5,7 @@ gem "rails",      "5.2.0"
 gem "sass-rails", "5.0.7"
 
 group :development do
-  gem "dotenv-rails", "2.4.0"
+  gem "dotenv-rails", "2.5.0"
   gem "listen",       "3.1.5"
 end
 
