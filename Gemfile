@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
 gem "oauth2",     "1.4.4"
-gem "rails",      "6.0.2.2"
+gem "rails",      "6.0.3.1"
 gem "sass-rails", "6.0.0"
 
 group :development do
@@ -10,7 +10,7 @@ group :development do
 end
 
 group :development, :test do
-  gem "rspec-rails", "4.0.0"
+  gem "rspec-rails", "4.0.1"
 end
 
 group :test do
