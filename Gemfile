@@ -1,12 +1,12 @@
 source "https://rubygems.org"
 
 gem "oauth2",     "1.4.7"
-gem "rails",      "6.1.4.1"
+gem "rails",      "7.0.1"
 gem "sass-rails", "6.0.0"
 
 group :development do
   gem "dotenv-rails", "2.7.6"
-  gem "listen",       "3.7.0"
+  gem "listen",       "3.7.1"
   gem "webrick",      "1.7.0"
 end
 
