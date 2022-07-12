@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 
-gem "oauth2",     "1.4.9"
-gem "rails",      "7.0.3"
+gem "oauth2",     "2.0.5"
+gem "rails",      "7.0.3.1"
 gem "sass-rails", "6.0.0"
 
 group :development do
